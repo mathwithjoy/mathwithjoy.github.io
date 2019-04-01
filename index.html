@@ -5,11 +5,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Mr. Jung's Projects</title>
-
-        <!-- MathQuill -->
-        <link rel="stylesheet" href="css/mathquill.css"/>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/mathquill.js"></script>
         
         <!-- jQuery Mobile -->
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" /> 
@@ -30,16 +25,6 @@
                 position: absolute;
                 bottom: 0;
                 width: 100%;
-            }
-            
-            .solution
-            {
-                color: white;
-            }
-            
-            .numberline
-            {
-                width: 30%;
             }
         </style> <!-- style -->
                 
@@ -63,26 +48,11 @@
                     <div data-role="collapsible" data-collapsed="true">
                         <h3>Projects</h3>
                             <ul data-role="listview">
-                                <li data-role="list-divider">Web Apps</li>
+                                <li data-role="list-divider">Apps</li>
                                     <li><a href="http://www.mathanimo.com/"><h3>Math &Aacute;nimo</h3><p>A math problem generator</p></a></li>
                                     <li><a href="http://www.statsassistant.com/"><h3>Stats Assistant</h3><p>A calculator for a high school stats class</p></a></li>
                             </ul> <!--listview-->  
                     </div> <!--collapsible --> 
-                    <div data-role="collapsible" data-collapsed="true">
-                        <h3>Demos</h3>
-                            <ul data-role="listview">
-                                <li data-role="list-divider">Demos</li>
-                                    <li><a href="index.html#mathquilldemo"><h3>Math Quill</h3><p>A MathQuill demo</p></a></li>
-                            </ul> <!--listview-->
-                    </div> <!--collapsible -->
-                    <div data-role="collapsible" data-collapsed="true">
-                        <h3>Videos</h3>
-                            <ul data-role="listview">
-                                <li data-role="list-divider">YT Channels</li>
-                                    <li><a href="https://www.youtube.com/channel/UCX2PTrKyFao197-rF3ORd3A"><h3>Math with Joy</h3><p>Math instructional videos</p></a></li>
-                                    <li><a href="https://www.youtube.com/user/wonheeguitar"><h3>Wonhee Guitar</h3><p>Classical guitar videos</p></a></li>
-                            </ul> <!--listview-->
-                    </div> <!--collapsible -->
                 </div> <!-- collapsible set -->
                                 
                 <button onclick="location.href='index.html#about'">About Mr. Jung's Projects</button>
@@ -112,70 +82,7 @@
             <div data-role="footer" id="footer">
                 <h2>mathwithjoy.github.io/mathwithjoy</h2>
             </div> <!-- footer -->
-        </div> <!-- page -->
-
-        <!-- Beginning of MathQuill Demo -->
-        <div data-role="page" id="mathquilldemo">
-            
-            <!-- header -->
-            <div data-role="header">
-                <h1>MathQuill Demo</h1>
-            </div> <!-- header -->
-            
-            <!-- main -->
-            <div data-role="main" class="ui-content">
-                <button onclick="location.href='index.html#main'">Main Menu</button>
-                
-                <!-- button that calls the "problem" functions in main.js and the UpdateMath function -->
-                <input type="button" value="Generate Problems" 
-                onclick="
-                gent0l1p1(),
-                gent0l1p2()
-                ;         
-                ">
-                
-                <!-- student information -->
-                <div class="ui-field-contain">
-                    <label for="studentName">Name:</label>
-                    <input type="text" data-clear-btn="true" data-mini="true" name="studentName" id="studentName" value="">
-                </div>
-                <div class="ui-field-contain">
-                    <label for="studentPeriod">Period:</label>
-                    <input type="text" data-clear-btn="true" data-mini="true" name="studentPeriod" id="studentPeriod" value="">
-                </div>
-                <div class="ui-field-contain">
-                    <label for="studentDate">Date:</label>
-                    <input type="date" data-clear-btn="true" data-mini="true" name="studentDate" id="studentDate" value="">
-                </div>
-
-                <!-- t0l1p1 -->
-                <div id="t0l1p1" class="output">
-                    <p>1. Given the equation, <span id="t0l1p1n1"></span>, what is the value of <span id="t0l1p1n2"></span>?</p>
-                    <p class="solution"><span id="t0l1s1n1"></span>.</p>    
-                </div>
-                
-                <br><br>
-                
-                <!-- t0l1p2 -->
-                <div id="t0l1p2" class="output">
-                    <p>2. Given the equation, <span id="t0l1p2n1"></span>, what is the value of <span id="t0l1p2n2"></span>?</p>
-                    <p class="solution"><span id="t0l1s2n1"></span>.</p>    
-                </div>
-                
-                <br><br>
-                
-            </div> <!-- main -->
-            
-            <!-- footer -->
-            <div data-role="footer" id="footer">
-                <h2>Mr. Jung's Projects</h2>
-            </div> <!-- footer -->
-        </div>
-        <!-- End of Powers -->
-            
-    <script>
-        var MQ = MathQuill.getInterface(2); // for backcompat
-    </script>         
+        </div> <!-- page -->        
 
     </body>
 </html>
